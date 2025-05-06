@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div id="welcome-screen" class="screen active">
-                <h1 id="welcome-screen-h1">Добро пожаловать, странник!</h1>
-                <p id="welcome-screen-p">Я буду звать тебя <span id="username">Гость</span>, ок?</p>
-                <div class="buttons">
-                    <button id="continue">Ладно...</button>
-                    <button id="change-name">А может не надо?...</button>
-                </div>
-            </div>
-
-            <div id="animal-choice" class="screen">
-                <h1>На чьей ты стороне?</h1>
-                <div class="animal-options">
-                    <button class="animal-btn" data-animal="cat">Коты</button>
-                    <button class="animal-btn" data-animal="dog">Собаки</button>
-                    <button class="animal-btn" data-animal="fox">Лисы</button>
-                </div>
-            </div>
-
-            <div id="animal-fact" class="screen">
-                <h1 id="animal-title"></h1>
-                <div class="fact-container">
-                    <img id="animal-image" src="" alt="Изображение животного" referrerpolicy="no-referrer">
-                    <p id="fact-text"></p>
-                </div>
-                <button id="new-fact">Новый факт</button>
-                <button id="back-to-choice">Выбрать другое животное</button>
-            </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="welcome-screen" class="screen active">
+        <h1 id="welcome-screen-h1">Добро пожаловать, странник!</h1>
+        <p id="welcome-screen-p">
+          Я буду звать тебя <span id="username">Гость</span>, ок?
+        </p>
+        <div class="buttons">
+          <button id="continue">Ладно...</button>
+          <button id="change-name">А может не надо?...</button>
         </div>
+      </div>
 
-        <script src="script.js"></script>
-    </body>
+      <div id="animal-choice" class="screen">
+        <h1>На чьей ты стороне?</h1>
+        <div class="animal-options">
+          <button class="animal-btn" data-animal="cat">Коты</button>
+          <button class="animal-btn" data-animal="dog">Собаки</button>
+          <button class="animal-btn" data-animal="fox">Лисы</button>
+        </div>
+      </div>
+
+      <div id="animal-fact" class="screen">
+        <h1 id="animal-title"></h1>
+        <div class="fact-container">
+          <img
+            id="animal-image"
+            src=""
+            alt="Изображение животного"
+            referrerpolicy="no-referrer"
+          />
+          <p id="fact-text"></p>
+        </div>
+        <button id="new-fact">Новый факт</button>
+        <button id="back-to-choice">Выбрать другое животное</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
