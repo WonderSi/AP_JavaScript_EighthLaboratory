@@ -1,0 +1,30 @@
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+tr.child {
+  background-color: #d4edda;
+}
+tr.adult {
+  background-color: #fff3cd;
+}
+tr.senior {
+  background-color: #f8d7da;
+}
+
+#editModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid black;
+  z-index: 1000;
+}

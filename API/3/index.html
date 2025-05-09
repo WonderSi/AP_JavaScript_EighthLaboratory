@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Таблица данных о людях</h1>
+
+    <div class="controls">
+      <button id="loadBtn">Загрузить данные</button>
+      <button id="addBtn">Добавить запись</button>
+      <button id="deleteSelectedBtn">Удалить выбранное</button>
+      <select id="genderFilter">
+        <option value="all">Все</option>
+        <option value="male">Мужчины</option>
+        <option value="female">Женщины</option>
+      </select>
+    </div>
+
+    <div id="tableContainer"></div>
+
+    <div id="editModal">
+      <h3 id="modalTitle">Добавить запись</h3>
+      <form id="editForm">
+        <div>
+          <label>Имя:</label>
+          <input type="text" name="firstName" required />
+        </div>
+        <div>
+          <label>Фамилия:</label>
+          <input type="text" name="lastName" required />
+        </div>
+        <div>
+          <label>Возраст:</label>
+          <input type="number" name="age" min="1" max="120" required />
+        </div>
+        <div>
+          <label>Пол:</label>
+          <select name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+        </div>
+        <div>
+          <label>Адрес:</label>
+          <input type="text" name="address" required />
+        </div>
+        <div>
+          <label>Телефон:</label>
+          <input type="tel" name="phone" required />
+        </div>
+        <div style="margin-top: 10px">
+          <button type="submit">Сохранить</button>
+          <button type="button" id="cancelBtn">Отмена</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
